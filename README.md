@@ -1,61 +1,130 @@
-# Government Scheme Eligibility Checker
+# 🏛️ Government Scheme Eligibility Checker
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-black?logo=flask)
+![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5)
+![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3)
+![JSON](https://img.shields.io/badge/JSON-Database-lightgrey?logo=json)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Government Scheme Eligibility Checker is a Flask-based web application that helps users determine their eligibility for multiple government welfare schemes using predefined rule-based logic. The application provides transparent rejection reasons and displays the required documents for eligible schemes.
+A Flask-based web application that helps users verify their eligibility for multiple government welfare schemes using a rule-based decision system. The application provides transparent rejection reasons and displays the required documents before users apply.
 
-## Features
+---
+
+## 📌 Features
 
 - Rule-based eligibility verification
-- Multiple government scheme support
+- Supports multiple government schemes
 - Transparent rejection reasons
-- Required document guidance
-- User-friendly web interface
+- Displays required documents
+- User-friendly interface
+- Fast eligibility checking
+- JSON-based data management
 
-## Technologies Used
+---
+
+## 🛠 Technologies Used
 
 - Python
 - Flask
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JSON
 
-## Project Structure
+---
+
+## 📂 Project Structure
 
 ```
-Government-Scheme-Eligibility-Checker/
-│── app.py
-│── schemes.json
-│── templates/
-│── static/
+Government-Scheme-Eligibility-Checker
+│
+├── app.py
+├── schemes.json
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── static
+│   ├── Style.css
+│   └── screenshots
+│
+└── templates
+    ├── index.html
+    └── result.html
 ```
 
-## Installation
+---
 
-1. Clone the repository
+## 🚀 Installation
 
-```
+Clone the repository
+
+```bash
 git clone https://github.com/meghanamothe12/Government-Scheme-Eligibility-Checker.git
 ```
 
-2. Install Flask
+Go inside the folder
 
-```
-pip install flask
+```bash
+cd Government-Scheme-Eligibility-Checker
 ```
 
-3. Run the project
+Install dependencies
 
+```bash
+pip install -r requirements.txt
 ```
+
+Run the project
+
+```bash
 python app.py
 ```
 
-4. Open your browser
+Open your browser
 
 ```
 http://127.0.0.1:5000
 ```
 
-## Author
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home](static/screenshots/home.png)
+
+### Eligible Result
+
+![Eligible](static/screenshots/eligible.png)
+
+### Rejected Result
+
+![Rejected](static/screenshots/rejected.png)
+
+---
+
+## 🎯 Future Enhancements
+
+- Database Integration
+- Aadhaar Authentication
+- AI-based Scheme Recommendation
+- Admin Dashboard
+- Multi-language Support
+- Mobile Responsive Design
+
+---
+
+## 👩‍💻 Author
 
 **Mothe Meghana**
+
+GitHub: https://github.com/meghanamothe12
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.

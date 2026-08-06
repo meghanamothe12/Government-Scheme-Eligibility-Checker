@@ -1,0 +1,43 @@
+{
+  "Women_Empowerment_Grant": {
+    "min_age": 18,
+    "max_age": 60,
+    "income_limit": 500000,
+    "gender_required": "Female",
+    "required_documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Caste Certificate",
+      "Bank Passbook",
+      "Business Plan"
+    ]
+  },
+
+  "Disability_Support_Allowance": {
+    "max_income": 300000,
+    "disability_required": "Yes",
+    "required_documents": [
+      "Aadhaar Card",
+      "Disability Certificate",
+      "Income Certificate",
+      "Bank Passbook"
+    ]
+  },
+
+  "PMAY_Housing": {
+    "max_income": 600000,
+    "required_documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Property Documents"
+    ]
+  },
+
+  "PMKVY_Skill_Development": {
+    "min_age": 18,
+    "required_documents": [
+      "Aadhaar Card",
+      "Education Certificates"
+    ]
+  }
+}

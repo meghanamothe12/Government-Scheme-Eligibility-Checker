@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Eligibility Analysis</h2>
+
+<p><b>{{ eligible_count }} Eligible</b> | <b>{{ rejected_count }} Rejected</b></p>
+
+{% for scheme in results %}
+
+<div class="scheme {% if scheme.status == 'Eligible' %}eligible{% else %}rejected{% endif %}">
+
+    <h3>{{ scheme.name }}</h3>
+
+    {% if scheme.status == "Eligible" %}
+        <p>Eligible ✅</p>
+    {% else %}
+        <p>Rejected ❌</p>
+
+        <ul>
+            {% for r in scheme.reasons %}
+                <li>{{ r }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <p><b>Required Documents:</b></p>
+    <ul>
+        {% for doc in scheme.documents %}
+            <li>{{ doc }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>

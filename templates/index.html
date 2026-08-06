@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Why Rejected? Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">	
+    <h2>Why Rejected? Assistant</h2>
+
+    <form action="/check" method="post">
+
+        Age:
+        <input type="number" name="age" required>
+
+        Income:
+        <input type="number" name="income" required>
+
+        Gender:
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        Residency:
+        <select name="residency">
+            <option>Urban</option>
+            <option>Rural</option>
+        </select>
+
+        Education:
+        <select name="education">
+            <option>Graduate</option>
+            <option>Postgraduate</option>
+        </select>
+
+        Employment:
+        <select name="employment">
+            <option>Employed</option>
+            <option>Unemployed</option>
+        </select>
+
+        Category:
+        <select name="category">
+            <option>SC</option>
+            <option>ST</option>
+            <option>OBC</option>
+            <option>General</option>
+        </select>
+
+        Disability:
+        <select name="disability">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <button type="submit">Check Eligibility</button>
+
+    </form>
+</div>
+
+</body>
+</html>
